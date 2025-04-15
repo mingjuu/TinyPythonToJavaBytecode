@@ -450,7 +450,6 @@ public class tinyPythonToJasmin extends tinyPythonBaseListener{
                 newTexts.put(ctx, func_info);
             }
             else {
-                //인자 있는 함수 호출 인자로드하고, 함수 호출하는건가? 이게맞냐
                 String func_info = hashtable_method_public.get(ctx.NAME().getText());
                 for (int i=0; i<ctx.opt_paren().expr().size(); i++){
                     s += newTexts.get(ctx.opt_paren().expr(i))+"\n";
